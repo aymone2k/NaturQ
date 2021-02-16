@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import * as React from 'react';
+import React,{ useEffect , useState}  from 'react';
+
 import { Text, View } from 'react-native';
 import styles from './App.styles';
 import 'react-native-gesture-handler';
@@ -11,11 +12,15 @@ import Enfant from '../Enfant';
 import Enfant2 from '../Enfant/Enfant2.js';
 import Parcours from '../Parcours';
 import Reconnaissance from '../Reconnaissance';
+import Etape from '../../components/Etape';
+import Fiche from '../../components/Fiche';
 
 
 const Stack = createStackNavigator();
 
 const App = () => {
+  const[idEtape, setIdEtape] = useState(undefined);
+  const[idFiche, setIdFiche] = useState(1);
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -32,6 +37,10 @@ const App = () => {
 
        
         </Stack.Navigator>
+
+        {idEtape !== undefined && <Etape id={idEtape} setId={setIdEtape}/>}
+      {idFiche !== undefined && <Fiche id={idFiche} setId={setIdFiche}/>}
+      <StatusBar style="auto" />
     </NavigationContainer>
   );
 };

@@ -15,8 +15,7 @@ export default function Hello() {
              
         <View >
         <TextInput editable placeholder= "Saisie ton prénom ici" onChangeText={handleChangeState} />
-            <Button
-            onPress={submitName}/>
+          
            </View>
             
         
