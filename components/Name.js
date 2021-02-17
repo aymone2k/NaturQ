@@ -4,18 +4,25 @@ import { Input } from 'react-native-elements';
 
 
 
-export default function Hello() {
-    const[value, onChangeText] = React.useState();
+export default function Name( {nom} ) {
 
-    const handleChangeState = function(){onChangeText({value})}
+    const[name, handleChangeState] = useState("");
+
+    
   
-  
+    const handlePressName = function(){
+        
+         nom = name
+        console.log(nom)
+    }
+    
         
         return<View>
              
         <View >
-        <TextInput editable placeholder= "Saisie ton prénom ici" onChangeText={handleChangeState} />
-          
+        <Input placeholder= {"Saisie ton prénom ici"} onChangeText={handleChangeState} value={name} />
+        <Button onPress={handlePressName}/>
+         
            </View>
             
         
