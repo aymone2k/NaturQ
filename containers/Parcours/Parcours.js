@@ -8,6 +8,7 @@ export default function Parcours({navigation}) {
   return (
     <View style={styles.container}>
       <Text>Parcours</Text>
+      <Fiche/>
       <Button
           title="Back to home"
           onPress={() =>navigation.navigate('Home')

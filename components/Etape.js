@@ -6,30 +6,26 @@ import axios from 'axios';
 
 export default function Etape(props){
 
-    const [etape, setEtape] = useState();
+    const [etape, setEtape] = useState(undefined);
     useEffect(function(){
-        axios.get('http://localhost:8000/step/1/' + props.id).then(function(reponse){
-            setEtape(reponse.data);
-        })
-    },[props.id]);
+        axios.get('http://localhost:8000/question/' + props.id).then(function(reponse){
+            setEtape(reponse.data);})
+        },[props.id]);
+
     if(etape === undefined){
         return(<View>
             <Text>En Chargement ...</Text>
         </View>)
     } 
-    return(
+    return( 
         <View>
             <Text>
-                {etape.name_step}
+                {etape.title}
             </Text>
-            {etape.question.map(function(questionData){
-                return <Button title={questionData.name_question} onPress={function(){props.setId(questionData.nextStep.id)}}/>
+            {etape.proposal.map(function(proposalData){
+                return <Button title={proposalData.content.title} onPress={function(){props.setId(proposalData.next_step.id)}}/>
             })}
-            {
-                etape.question.map(function(questionData){
-                    return <Text>{question.picture}</Text>
-                })
-            }
+           
         </View>
     );
 }

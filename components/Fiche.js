@@ -9,7 +9,7 @@ export default function Fiche(props) {
  
     const [fiche, setFiche] = useState(undefined);
  
-    useEffect(function() {
+    useEffect(function() { 
         axios.get('http://localhost:8000/sheet/' + props.id)
         .then(function(reponse) {
             setFiche(reponse.data);
