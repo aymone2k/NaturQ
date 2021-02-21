@@ -4,15 +4,16 @@ import React, {useState} from 'react';
 
 
 
-export default function Hello({phrase, avatar}) {
+export default function Hello({phrase1, avatar,phrase2}) {
     
    
    
         
         return<View>
         <View >
-            <Image source={avatar} style={{width:20, height:20}}/>
-            <Text>{phrase}</Text>
+        <Text>{phrase1}</Text>
+            <Image source={avatar} style={{width:60, height:100}}/>
+            <Text>{phrase2}</Text>
             
            </View>
             

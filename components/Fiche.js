@@ -9,8 +9,8 @@ export default function Fiche(props) {
  
     const [fiche, setFiche] = useState(undefined);
  
-    useEffect(function() { 
-        axios.get('http://localhost:8000/sheet/' + props.id)
+    useEffect(function() {
+        axios.get('http://localhost:8000/result/' + props.id)
         .then(function(reponse) {
             setFiche(reponse.data);
         })
@@ -18,14 +18,14 @@ export default function Fiche(props) {
  
     if(fiche === undefined) {
         return (
-        <View >
+        <View style={styles.container}>
             <Text>En chargement...</Text>
         </View>
-        ) 
+        )
     }
    
     return (
-        <View>
+        <View style={styles.container}>
           <Text>Titre</Text>
           <Text>Description</Text>
           <Image
@@ -56,3 +56,4 @@ export default function Fiche(props) {
   
     );
   }
+  

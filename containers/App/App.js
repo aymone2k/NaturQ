@@ -6,29 +6,36 @@ import styles from './App.styles';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import HomeApp from '../HomeApp';
 import Home from '../Home';
 import Adulte from '../Adulte';
 import Enfant from '../Enfant';
-import Enfant2 from '../Enfant/Enfant2.js';
+import Enfant2 from '../Enfant2/Enfant2.js';
 import Parcours from '../Parcours';
 import Reconnaissance from '../Reconnaissance';
 import Etape from '../../components/Etape';
 import Fiche from '../../components/Fiche';
+import Name from '../../components/Name.js'
+import NameSaisi from '../../components/NameSaisi';
+
+
 
 
 const Stack = createStackNavigator();
 
 const App = () => {
-  const[idEtape, setIdEtape] = useState(undefined);
-  const[idFiche, setIdFiche] = useState(1);
+  
+
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ title: 'NaturQuest' }}
-        />
+          name="HomeApp"
+          component={HomeApp}
+          options={{ title: 'NaturQuest'} }
+          style={styles.stretch}/>
+          
+        <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Adulte" component={Adulte} />
         <Stack.Screen name="Enfant" component={Enfant} />
         <Stack.Screen name="Enfant2" component={Enfant2} />
@@ -38,8 +45,7 @@ const App = () => {
        
         </Stack.Navigator>
 
-        {idEtape !== undefined && <Etape id={idEtape} setId={setIdEtape}/>}
-      {idFiche !== undefined && <Fiche id={idFiche} setId={setIdFiche}/>}
+       
       <StatusBar style="auto" />
     </NavigationContainer>
   );

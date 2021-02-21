@@ -1,17 +1,21 @@
-import { RecyclerViewBackedScrollViewBase } from "react-native";
-
 import React, {Component, useState} from 'react';
 import { StyleSheet, Text, Image, TextInput, View, Button, TouchableWithoutFeedback } from 'react-native';
-import Name from '../components/Name.js'
+import { Input } from 'react-native-elements';
 
 
-export default function NameSaisi( {...nom}) {
+
+export default function NameSaisi(props) {
 
     
         
-        return<View>
-             <Text>{nom}</Text>
+        return(
+             
+        <View >
+        {/* trouver solution pour enregistrer les noms saisis et les appeler après */}
+          <Text></Text>
+           </View> 
       
-          
-           </View>
+        
+    );
+
 }

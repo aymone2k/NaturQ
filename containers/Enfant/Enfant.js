@@ -5,7 +5,7 @@ import styles from './Enfant.styles';
 import { Button, Input } from 'react-native-elements';
 
 import Hello from '../../components/Hello.js';
-import Koxy from '../../constants/Koxy.js';
+import Kocxy from '../../constants/Kocxy.js';
 import Name from '../../components/Name.js';
 
 
@@ -18,11 +18,12 @@ export default function Enfant({navigation: {navigate}}) {
     <View >
        
       <Hello 
-      phrase={Koxy[0].phrase}
-      avatar={Koxy[0].avatar}
+      phrase1={Kocxy[0].phrase1}
+      avatar={Kocxy[0].avatar}
+      phrase2={Kocxy[0].phrase2}
       />
       <Name/>
-    <Button title="Valider" onPress={() =>navigate('Enfant2')}/>
+    <Button title="Continuer" onPress={() =>navigate('Enfant2')}/>
       
       
     </View>
