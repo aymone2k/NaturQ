@@ -9,7 +9,7 @@ import { Button } from 'react-native-elements';
 
 export default function Adulte({navigation: {navigate}}) {
   return (
-    <View style={styles.container}>
+    <View style={styles.adulte}>
       
       <Button
           title="Reconnaissance"

@@ -17,7 +17,7 @@ import Etape from '../../components/Etape';
 import Fiche from '../../components/Fiche';
 import Name from '../../components/Name.js'
 import NameSaisi from '../../components/NameSaisi';
-
+import LogoTitle from '../../constants/LogoTitle.js';
 
 
 
@@ -27,13 +27,19 @@ const App = () => {
   
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="HomeApp"
-          component={HomeApp}
-          options={{ title: 'NaturQuest'} }
-          style={styles.stretch}/>
+    <NavigationContainer style={styles.app} >
+      <Stack.Navigator  screenOptions={{
+         
+          headerStyle: {
+            backgroundColor: '#34856E',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitle: props => <LogoTitle {...props} />
+        }}>
+        <Stack.Screen name="HomeApp" component={HomeApp}/>
           
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Adulte" component={Adulte} />

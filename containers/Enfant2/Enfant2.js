@@ -13,16 +13,17 @@ import NameSaisi from '../../components/NameSaisi';
 
 
 export default function Enfant2({navigation: {navigate}}) {
-
+  console.log(<Hello/>)
    
   return (
     <View>
   <Hello
- avatar={Kocxy[4].avatar}
- phrase2={Kocxy[4].phrase2}
-  phrase1={Kocxy[4].phrase1}
+ avatar={Kocxy[2].avatar}
+ phrase2={Kocxy[2].phrase2}
+  phrase1={Kocxy[2].phrase1}
  
 />
+
   
        
       <Button

@@ -2,9 +2,9 @@ import{ StyleSheet} from 'react-native';
 
 
 const styles = StyleSheet.create({
-    container: {
+    adulte: {
       flex: 1,
-      backgroundColor: 'red',
+      backgroundColor: '#784834',
       alignItems: 'center',
       justifyContent: 'center',
     },
