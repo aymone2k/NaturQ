@@ -1,5 +1,5 @@
 import React,{ useEffect , useState}  from 'react';
-import{View, StyleSheet, Button, Text } from 'react-native';
+import{View, StyleSheet, Button, Text , ActivityIndicator} from 'react-native';
 
 import axios from 'axios';
 
@@ -19,7 +19,7 @@ export default function Fiche(props) {
     if(fiche === undefined) {
         return (
         <View style={styles.container}>
-            <Text>En chargement...</Text>
+            <ActivityIndicator size="large" color="#00ff00" />
         </View>
         )
     }

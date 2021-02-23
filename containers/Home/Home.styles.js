@@ -2,12 +2,18 @@ import{ StyleSheet} from 'react-native';
 
 
 const styles = StyleSheet.create({
-    container: {
+    home: {
       flex: 1,
-      backgroundColor: '#fff',
+      
+      
+      
+    },
+    homeImage:{
+      flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-    },
+      resizeMode: "center",
+    }
   });
 
   export default styles

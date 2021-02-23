@@ -1,5 +1,5 @@
 import React,{ useEffect , useState}  from 'react';
-import{View, StyleSheet, Button, Text } from 'react-native';
+import{View, StyleSheet, Button, Text, ActivityIndicator } from 'react-native';
 
 import axios from 'axios';
 
@@ -14,11 +14,11 @@ export default function Etape(props){
         })
      }, [props.id]);
 
-     console.log("etape", etape);
+   
 
      if (etape === undefined){
          return (<View style={StyleSheet.container}>
-             <Text>En chargement...</Text>
+             <ActivityIndicator size="large" color="#00ff00" />
             </View>
          )}
     return (<View style={StyleSheet.container}>
@@ -26,7 +26,7 @@ export default function Etape(props){
             <Text>{etape.title}</Text>
 
             {etape.nextProposals.map(function(nextProposalsData){
-                return <Button title={nextProposalsData.content}onPress={function(){
+                return <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}}  title={nextProposalsData.content}onPress={function(){
                 props.setId(nextProposalsData.nextStep.id)
             }}/>
         })}
