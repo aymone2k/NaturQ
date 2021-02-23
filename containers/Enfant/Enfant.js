@@ -16,7 +16,7 @@ export default function Enfant({navigation: {navigate}}) {
 
 
   return (
-    <View >
+    <View style={styles.enfant}>
       
       <Hello 
       phrase1={Kocxy[0].phrase1}

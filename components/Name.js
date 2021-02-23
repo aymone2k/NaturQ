@@ -3,6 +3,7 @@ import { StyleSheet, Text, Image, TextInput, View } from 'react-native';
 import { Input, Button, Overlay } from 'react-native-elements';
 import Hello from '../components/Hello.js';
 import Kocxy from '../constants/Kocxy.js';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 export default function Name() {
@@ -21,11 +22,11 @@ export default function Name() {
         }
     
         
-        return(<View>
+        return(<View style={styles.name}>
              
         <View >
-        <Input placeholder= {"Saisie ton prénom ici"} onChangeText={text=> setName(text)} value={name} />
-        <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:"20px"}}  title="valider" onPress={handlePressName}/>
+        <Input placeholder= {"Saisie ton prénom ici"} onChangeText={text=> setName(text)} value={name}  leftIcon={{ type: 'font-awesome', name: 'child' }} inputStyle={{ color: "#784834" , fontWeight: "bold" }} />
+        <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:"10px", margin:"20px"}}  title="valider" onPress={handlePressName}/>
         
            </View>   
            <View>
@@ -39,7 +40,10 @@ export default function Name() {
  phrase2={Kocxy[1].phrase2}
   phrase1={Kocxy[1].phrase1}
  
-/></Overlay>
+/>
+<Button title="C'est parti!" onPress={handlePressName} />
+
+</Overlay>
 </View>
 })}
  
@@ -48,3 +52,10 @@ export default function Name() {
     </View>);
 
 }
+
+const styles = StyleSheet.create({
+  name:{
+    flex:1
+  }
+})
+   

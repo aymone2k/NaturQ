@@ -37,8 +37,7 @@ const App = () => {
           headerTitleStyle: {
             fontWeight: 'bold',
           },
-          headerTitle: props => <LogoTitle {...props} /> 
-          
+          headerTitle: props => <LogoTitle {...props} />
           
         }}>
         <Stack.Screen name="HomeApp" component={HomeApp}/>

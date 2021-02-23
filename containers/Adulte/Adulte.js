@@ -11,7 +11,8 @@ export default function Adulte({navigation: {navigate}}) {
   return (
     <View style={styles.adulte}>
       
-      <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", marginBottom:"30px"}} 
+      
+      <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", margin:"30px"}} 
           title="Reconnaissance"
           onPress={() =>navigate('Reconnaissance')
           }

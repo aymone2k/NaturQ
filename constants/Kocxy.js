@@ -14,7 +14,7 @@ const Kocxy = ([
     },
     {
         _id:2,
-        phrase1:"Quelle activité souhaiterai tu faire?",
+        phrase1:"Quelle activité souhaiterais tu faire?",
         avatar:require('../assets/kocxy/kocxy.png'),
         phrase2:"",
     },

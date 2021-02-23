@@ -2,9 +2,9 @@ import{ StyleSheet} from 'react-native';
 
 
 const styles = StyleSheet.create({
-    container: {
+    enfant: {
       flex: 1,
-      backgroundColor: 'blue',
+      backgroundColor: '#E2ECBA',
       alignItems: 'center',
       justifyContent: 'center',
     },
