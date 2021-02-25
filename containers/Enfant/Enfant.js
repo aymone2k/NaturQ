@@ -13,20 +13,42 @@ import Name from '../../components/Name.js';
 
 export default function Enfant({navigation: {navigate}}) {
  
-
-
+  
+    const [visible, setVisible] = useState(true);
+  
+    const toggleOverlay = () => {
+      setVisible(!visible);
+    };
+  
   return (
     <View style={styles.enfant}>
       
-      <Hello 
-      phrase1={Kocxy[0].phrase1}
-      avatar={Kocxy[0].avatar}
-      phrase2={Kocxy[0].phrase2}
-      />
-      <Name/>
-      <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}}  title="Continuer" onPress={() =>navigate('Enfant2')}/>
+      <Overlay isVisible={visible} onBackdropPress={toggleOverlay}>
       
-    
+      <Name/>
+      <Button title="ok" onPress={toggleOverlay} />
+     
+      </Overlay>
+      
+  <Hello
+ avatar={Kocxy[2].avatar}
+ phrase2={Kocxy[2].phrase2}
+  phrase1={Kocxy[2].phrase1}
+ 
+/>
+
+  
+       
+<Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", marginBottom:"30px"}} 
+          title="Reconnaissance"
+          onPress={() =>navigate('Reconnaissance')
+          }
+        />
+        <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}} 
+          title="Parcours"
+          onPress={() =>navigate('Parcours')
+          }
+        />
     </View>
   );
 }

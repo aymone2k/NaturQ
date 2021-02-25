@@ -12,8 +12,8 @@ import NameSaisi from '../../components/NameSaisi';
 
 
 
-export default function Enfant2({navigation: {navigate}}) {
-  console.log(<Hello/>)
+export default function Enfant2() {
+
    
   return (
     <View>

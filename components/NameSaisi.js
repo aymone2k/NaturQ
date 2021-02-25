@@ -1,21 +1,28 @@
 import React, {Component, useState} from 'react';
-import { StyleSheet, Text, Image, TextInput, View, Button, TouchableWithoutFeedback } from 'react-native';
-import { Input } from 'react-native-elements';
+import { StyleSheet, Text, Image, TextInput, View } from 'react-native';
+import { Input, Button, Overlay } from 'react-native-elements';
+import Hello from '../components/Hello.js';
+import Kocxy from '../constants/Kocxy.js';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Enfant2 from '../containers/Enfant2'
 
-
-
-export default function NameSaisi(props) {
+export default function NameSaisi() {
 
     
         
-        return(
+     return(<View style={styles.name}>
              
-        <View >
-        {/* trouver solution pour enregistrer les noms saisis et les appeler après */}
-          <Text></Text>
-           </View> 
-      
         
-    );
+ 
+
+          
+    </View>);
 
 }
+
+const styles = StyleSheet.create({
+  name:{
+    flex:1
+  }
+})
+   

@@ -1,7 +1,7 @@
-import { StyleSheet, Text, Image, TextInput, View, Button, TouchableWithoutFeedback } from 'react-native';
-import { Input } from 'react-native-elements';
-import React, {useState} from 'react';
-import Kocxy from '../constants/Kocxy.js';
+import { StyleSheet, Text, Image, View } from 'react-native';
+
+import React from 'react';
+
 
 
 export default function Hello({phrase1, avatar,phrase2}) {
@@ -19,3 +19,10 @@ export default function Hello({phrase1, avatar,phrase2}) {
     </View>
 
 }
+
+const styles = StyleSheet.create({
+    homeApp:{
+      flex:1,
+      flexDirection:"column"
+    },
+})  
