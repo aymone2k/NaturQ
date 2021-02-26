@@ -3,30 +3,28 @@ import React,{ useEffect , useState}  from 'react';
 import { Text, View } from 'react-native';
 import styles from './Parcours.styles';
 import { Button } from 'react-native-elements';
-import Etape from '../../components/Etape.js';
-import Fiche from '../../components/Fiche.js';
+import Courses from '../../components/Courses.js';
+import SimpleMap from './test'
+
 
 
 
 export default function Parcours() {
 
-  const[idResult,setIdResult]=useState()
-  const[idEtape, setIdEtape] = useState(1)
+  
+  const[idCourses, setIdCourses] = useState(1)
 
   return (
+
+    
     <View style={styles.container}>
-          {idEtape !== undefined &&
-        <Etape 
-          id={idEtape}
-          setId={setIdEtape}
+          {idCourses !== undefined &&
+        <Courses
+          id={idCourses}
+          setId={setIdCourses}
           />
       }
-      {idResult !== undefined &&
-          <Fiche
-            id={idResult}
-            setId={setIdResult}
-          />
-      }
+  <SimpleMap/>
       
     
     </View> 
