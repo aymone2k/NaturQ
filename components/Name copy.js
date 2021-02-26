@@ -9,42 +9,31 @@ import NameSaisi from '../components/NameSaisi.js';
 
 
 export default function Name() {
-  const[name, setName] = useState("");
 
-  const[nom, setNom] = useState([]);
+    const[name, setName] = useState("");
 
-  const[monEtat, setMonEtat] = useState(true);
- const[page, setPage]= useState("");
- const[item, setItem]= useState("")
+    const[nom, setNom] = useState([]);
 
-  const handlePressName = function(){
-    if(monEtat == false){
-      setMonEtat(true)
-     
-    }
-     else{
-      setMonEtat(false)
-      setNom([...nom, name]);
-      setName('');
-    }         
-        
-                
+    const[monEtat, setMonEtat] = useState(true);
+   const[page, setPage]= useState("");
+   const[item, setItem]= useState("")
+
+    const handlePressName = function(){
+      if(monEtat == false){
+        setMonEtat(true)
+       
       }
-  
-      
-  
-    const [visible, setVisible] = useState(true);
-  
-    const toggleOverlay = () => {
-      setVisible(!visible);
-    };
-  
-  return (
-    <View style={styles.enfant}>
-      
-      <Overlay isVisible={visible} onBackdropPress={toggleOverlay}>
-      
-      <View style={styles.name} >
+       else{
+        setMonEtat(false)
+        setNom([...nom, name]);
+        setName('');
+      }         
+          
+                  
+        }
+    
+        
+        return(<View style={styles.name} >
             
 
             {monEtat === true && 
@@ -69,30 +58,16 @@ export default function Name() {
           Bienvenue {item}, </Text>
           <Hello
           avatar={Kocxy[1].avatar}
-          
-          phrase2={Kocxy[1].phrase2}
-           phrase1={Kocxy[1].phrase1}
+          phrase1={Kocxy[1].phrase2}
+           phrase2={Kocxy[1].phrase1}
          
          />
          
-         <Button title="C'est Parti !" onPress={toggleOverlay} />
+        
          </View>
           } </View>})}
          
       
-               
-    </View>
-      
-     
-      </Overlay>
-      
-  <Hello
- avatar={Kocxy[2].avatar}
- phrase2={Kocxy[2].phrase2}
-  phrase1={Kocxy[2].phrase1}
- 
-/>
-
                
     </View>);
 

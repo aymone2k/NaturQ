@@ -4,7 +4,9 @@ import{ StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   homeApp:{
     flex:1,
-    flexDirection:"column"
+    flexDirection:"column",
+  
+    
   },
    
     image:{
@@ -15,7 +17,6 @@ const styles = StyleSheet.create({
      
     } ,
     homeText: {
-     
       fontSize: 42,
       fontWeight: "bold",
       textAlign: "center",

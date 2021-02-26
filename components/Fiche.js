@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 
-export default function Fiche(props) {
+export default function Fiche(props, item) {
  
     const [fiche, setFiche] = useState(undefined);
  
@@ -26,7 +26,14 @@ export default function Fiche(props) {
    
     return (
         <View style={styles.container}>
-          <Text>Titre</Text>
+            <Hello
+          avatar={Kocxy[5].avatar}
+          
+          phrase2={Kocxy[5].phrase2}
+           phrase1={Kocxy[5].phrase1}
+         
+         />
+          <Text>Titre {item}</Text>
           <Text>Description</Text>
           <Image
             style={styles.tinyLogo}

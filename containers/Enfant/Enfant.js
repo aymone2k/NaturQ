@@ -14,28 +14,9 @@ import Name from '../../components/Name.js';
 export default function Enfant({navigation: {navigate}}) {
  
   
-    const [visible, setVisible] = useState(true);
-  
-    const toggleOverlay = () => {
-      setVisible(!visible);
-    };
-  
   return (
     <View style={styles.enfant}>
-      
-      <Overlay isVisible={visible} onBackdropPress={toggleOverlay}>
-      
-      <Name/>
-      <Button title="ok" onPress={toggleOverlay} />
-     
-      </Overlay>
-      
-  <Hello
- avatar={Kocxy[2].avatar}
- phrase2={Kocxy[2].phrase2}
-  phrase1={Kocxy[2].phrase1}
- 
-/>
+    <Name/>
 
   
        
