@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
       textAlign: "center",
       backgroundColor: '#444720a0',
-      padding:"50px",
+      padding:50,
   
     },
     text: {
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
       fontSize: 42,
       fontWeight: "bold",
       textAlign: "center",
-      marginBottom:"40px",
+      marginBottom:40,
      
   
     }

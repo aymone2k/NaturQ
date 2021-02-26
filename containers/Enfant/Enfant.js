@@ -12,20 +12,97 @@ import Name from '../../components/Name.js';
 
 
 export default function Enfant({navigation: {navigate}}) {
- 
+  const[name, setName] = useState("");
+
+  const[nom, setNom] = useState([]);
+
+  const[monEtat, setMonEtat] = useState(true);
+ const[page, setPage]= useState("");
+ const[item, setItem]= useState("")
+
+  const handlePressName = function(){
+    if(monEtat == false){
+      setMonEtat(true)
+     
+    }
+     else{
+      setMonEtat(false)
+      setNom([...nom, name]);
+      setName('');
+    }         
+        
+                
+      }
+  
+      
+  
+    const [visible, setVisible] = useState(true);
+  
+    const toggleOverlay = () => {
+      setVisible(!visible);
+    };
   
   return (
     <View style={styles.enfant}>
-    <Name/>
+      
+      <Overlay isVisible={visible} onBackdropPress={toggleOverlay}>
+      
+      <View style={styles.name} >
+            
+
+            {monEtat === true && 
+            <View>
+               <Hello 
+      phrase1={Kocxy[0].phrase1}
+      avatar={Kocxy[0].avatar}
+      phrase2={Kocxy[0].phrase2}
+      />
+ <Input placeholder= {"Saisie ton prénom ici"} onChangeText={text=> setName(text)} value={name}  leftIcon={{ type: 'font-awesome', name: 'child' }} inputStyle={{ color: "#784834" , fontWeight: "bold" }} />
+        <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:10, margin:20}}  title="valider" onPress={handlePressName}/>
+              </View>
+                        }
+                     
+       
+       
+        
+      
+        
+          
+        {nom.map((item)=>{return <View>{monEtat === false &&  <View><Text>
+          Bienvenue {item}, </Text>
+          <Hello
+          avatar={Kocxy[1].avatar}
+          phrase2={Kocxy[1].phrase2}
+           phrase1={Kocxy[1].phrase1}
+         
+         />
+         
+         <Button title="C'est Parti !" onPress={toggleOverlay} />
+         </View>
+          } </View>})}
+         
+      
+               
+    </View>
+      
+     
+      </Overlay>
+      
+  <Hello
+ avatar={Kocxy[2].avatar}
+ phrase2={Kocxy[2].phrase2}
+  phrase1={Kocxy[2].phrase1}
+ 
+/>
 
   
        
-<Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", marginBottom:"30px"}} 
+<Button  buttonStyle={{backgroundColor: '#34856E', padding:20, marginBottom:30}} 
           title="Reconnaissance"
           onPress={() =>navigate('Reconnaissance')
           }
         />
-        <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}} 
+        <Button  buttonStyle={{backgroundColor: '#34856E',padding:20}} 
           title="Parcours"
           onPress={() =>navigate('Parcours')
           }

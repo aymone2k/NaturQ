@@ -3,7 +3,7 @@ import React from 'react';
 import {ImageBackground, Text, View ,Image} from 'react-native';
 import styles from './HomeApp.styles';
 import { Button } from 'react-native-elements';
-import AnimHaut from '../../components/animHaut'
+import AnimHaut from '../../components/AnimHaut.js'
 
 
 
@@ -19,7 +19,7 @@ export default function HomeApp({navigation}) {
  <View style={styles.homeText}>
  <Text style={styles.text}> NaturQuest        
          </Text>
-         <Button title="ENTRER" buttonStyle={{backgroundColor: '#34856E',padding:"10px"}}  onPress={()=>navigation.navigate('Home')} />
+         <Button title="ENTRER" buttonStyle={{backgroundColor: '#34856E', padding:10}}  onPress={()=>navigation.navigate('Home')} />
          
         
    </View>        

@@ -26,12 +26,12 @@ export default function Enfant2() {
 
   
        
-<Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", marginBottom:"30px"}} 
+<Button  buttonStyle={{backgroundColor: '#34856E', padding:20, marginBottom:30}} 
           title="Reconnaissance"
           onPress={() =>navigate('Reconnaissance')
           }
         />
-        <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}} 
+        <Button  buttonStyle={{backgroundColor: '#34856E', padding:20}} 
           title="Parcours"
           onPress={() =>navigate('Parcours')
           }

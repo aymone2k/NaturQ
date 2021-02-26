@@ -12,12 +12,12 @@ export default function Adulte({navigation: {navigate}}) {
     <View style={styles.adulte}>
       
       
-      <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px", margin:"30px"}} 
+      <Button  buttonStyle={{backgroundColor: '#34856E',padding:20, margin:30}} 
           title="Reconnaissance"
           onPress={() =>navigate('Reconnaissance')
           }
         />
-        <Button  buttonStyle={{backgroundColor: '#34856E',padding:"20px"}} 
+        <Button  buttonStyle={{backgroundColor: '#34856E', padding:20}} 
           title="Parcours"
           onPress={() =>navigate('Parcours')
           }
