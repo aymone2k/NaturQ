@@ -24,7 +24,7 @@ export default function Parcours() {
           setId={setIdCourses}
           />
       }
-  <SimpleMap/>
+  
       
     
     </View> 

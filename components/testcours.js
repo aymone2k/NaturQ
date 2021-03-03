@@ -8,15 +8,7 @@ import axios from 'axios';
 
 export default function Courses(props){
     const[courses, setCourses] = useState(undefined);
-    const[map, setMap]= useState();
-    setMap={
-        center: {
-            lat: 59.95,
-            lng: 30.33
-          },
-          zoom: 11
-
-    };
+  
 
      useEffect(function(){
         axios.get("http://localhost:8000/course/" + props.id)  

@@ -6,6 +6,7 @@ import Kocxy from '../constants/Kocxy.js';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { useLinkProps } from '@react-navigation/native';
 import NameSaisi from '../components/NameSaisi.js';
+import Speak from './Speak.js';
 
 
 export default function Name() {
@@ -52,7 +53,7 @@ export default function Name() {
                <Hello 
       phrase1={Kocxy[0].phrase1}
       avatar={Kocxy[0].avatar}
-      phrase2={Kocxy[0].phrase2}
+     
       />
  <Input placeholder= {"Saisie ton prénom ici"} onChangeText={text=> setName(text)} value={name}  leftIcon={{ type: 'font-awesome', name: 'child' }} inputStyle={{ color: "#784834" , fontWeight: "bold" }} />
         <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:"10", margin:"20"}}  title="valider" onPress={handlePressName}/>
@@ -65,12 +66,11 @@ export default function Name() {
       
         
           
-        {nom.map((item)=>{return <View>{monEtat === false &&  <View><Text>
-          Bienvenue {item}, </Text>
+        {nom.map((item)=>{return <View style= {styles.modale}>{monEtat === false &&  <View><Speak>
+          Bienvenue </Speak> <Text>{item},</Text>
           <Hello
           avatar={Kocxy[1].avatar}
           
-          phrase2={Kocxy[1].phrase2}
            phrase1={Kocxy[1].phrase1}
          
          />
@@ -88,8 +88,7 @@ export default function Name() {
       
   <Hello
  avatar={Kocxy[2].avatar}
- phrase2={Kocxy[2].phrase2}
-  phrase1={Kocxy[2].phrase1}
+   phrase1={Kocxy[2].phrase1}
  
 />
 
@@ -101,6 +100,9 @@ export default function Name() {
 const styles = StyleSheet.create({
   name:{
     flex:1
+  },
+  modale:{
+    width:"50%"
   }
 })
    

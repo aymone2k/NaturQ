@@ -1,40 +1,27 @@
 import { StyleSheet, Text, Image, View } from 'react-native';
 
 import React, {useEffect, useState} from 'react';
+import Speak from './Speak';
 
 
-export default function Hello({phrase1, avatar,phrase2}) {
+export default function Hello({phrase1, avatar}) {
 
-  const[phraseA, setPhraseA]= useState(phrase1);
-  const[phraseB, setPhraseB]= useState(phrase2);
-console.log(phraseA, phraseB)
-
- // const tab = phrase1.split(" ");    
-  
-  // Afficher les valeurs du tableau 
- // for(const i = 0; i < tab.length; i++){
-  //  document.write("" + tab[i] + "");
-    //console.log(tab[i]);
-  //}
 
     
         
-        return<View>
-        <View >
-        <Text>{phraseA}</Text>
-            <Image source={avatar} style={{width:60, height:100}}/>
-            <Text>{phraseB}</Text>
-            
-           </View>
-     
+        return<View style={styles.hello}>
+      
+        <Image source={avatar} style={{width:60, height:100}}/>
+        <Speak>{phrase1}</Speak>
+                       
         
     </View>
 
 }
 
 const styles = StyleSheet.create({
-    homeApp:{
+    hello:{
       flex:1,
-      flexDirection:"column"
+      
     },
 })  

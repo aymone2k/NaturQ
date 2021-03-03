@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6d9a560-e644-4572-aad9-a75da7fbf0a5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/components/Courses.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Courses.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1pCzgIszJHBwPfW5Cl62EOoea7t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projet" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6d9a560-e644-4572-aad9-a75da7fbf0a5" name="Default Changelist" comment="" />
+      <created>1614701969298</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614701969298</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614702354761">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614702354761" />
+    <state x="7" y="114" width="1389" height="679" key="AVDManager" timestamp="1614750897867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="AVDManager/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614702803174" />
+    <state x="1929" y="144" width="1736" height="856" key="AVDManager/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614714266455" />
+    <state x="7" y="114" width="1389" height="679" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1614750897867" />
+    <state x="440" y="264" key="FileChooserDialogImpl" timestamp="1614715051691">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="440" y="264" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1614715051691" />
+    <state x="2470" y="333" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614713892649" />
+    <state x="2150" y="321" key="IDE.errors.dialog" timestamp="1614714124219">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2150" y="321" key="IDE.errors.dialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614714124219" />
+    <state x="2486" y="279" key="RollbackChangesDialog" timestamp="1614714803676">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2486" y="279" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614714803676" />
+    <state x="217" y="117" width="1264" height="707" key="SettingsEditor" timestamp="1614750558368">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2191" y="222" width="1251" height="713" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614714676544" />
+    <state x="217" y="117" width="1264" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614750558368" />
+    <state x="494" y="190" key="run.anything.popup" timestamp="1614750607391">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614702581761" />
+    <state x="494" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614750607391" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614702158185">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614702158185" />
+  </component>
+</project>
