@@ -12,7 +12,7 @@ export default function Hello({phrase1, avatar}) {
         return<View style={styles.hello}>
       
         <Image source={avatar} style={{width:60, height:100}}/>
-        <Speak>{phrase1}</Speak>
+        <Speak  >{phrase1}</Speak>
                        
         
     </View>
@@ -24,4 +24,5 @@ const styles = StyleSheet.create({
       flex:1,
       
     },
+    
 })  

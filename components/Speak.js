@@ -19,8 +19,8 @@ useEffect(() => {
 
   return (
    
-    <View>
-      <Text>
+    <View style={styles.speak}>
+      <Text style={{fontFamily:'monospace', fontWeight:'bold', fontSize:18, flexWrap:'wrap', width:300}} >
         {props.children.slice(0, positionToDisplay || 0)}
       </Text>
     </View>
@@ -28,4 +28,12 @@ useEffect(() => {
   );
   
   }
-  
+  const styles = StyleSheet.create({
+    speak:{
+      flex:1,
+      fontFamily:'monospace',
+      fontSize: 30,
+      fontWeight:'bold',
+    },
+    
+}) 
