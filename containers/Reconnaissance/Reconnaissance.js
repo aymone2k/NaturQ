@@ -25,11 +25,7 @@ export default function Reconnaissance() {
           />
       }
       
-     {/** <Button
-          title="Back to home"
-          onPress={() =>navigation.navigate('Home')
-          }
-        />*/}
+  
     </View> 
   );
 }

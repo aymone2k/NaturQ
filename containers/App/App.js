@@ -13,6 +13,7 @@ import Enfant from '../Enfant';
 import Enfant2 from '../Enfant2/Enfant2.js';
 import Parcours from '../Parcours';
 import Reconnaissance from '../Reconnaissance';
+import ReconnaissanceAdulte from '../ReconnaissanceAdulte';
 import Etape from '../../components/Etape';
 import Fiche from '../../components/Fiche';
 import Name from '../../components/Name.js'
@@ -48,6 +49,7 @@ const App = () => {
         <Stack.Screen name="Enfant2" component={Enfant2} />
         <Stack.Screen name="Parcours" component={Parcours} />
         <Stack.Screen name="Reconnaissance" component={Reconnaissance} />
+        <Stack.Screen name="ReconnaissanceAdulte" component={ReconnaissanceAdulte} />
 
        
         </Stack.Navigator>

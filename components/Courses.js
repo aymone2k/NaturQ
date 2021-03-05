@@ -3,60 +3,15 @@ import{View, Text, ActivityIndicator } from 'react-native';
 import { Button } from 'react-native-elements';
 import GoogleMapReact from 'google-map-react';
 import axios from 'axios';
+import { WebView } from 'react-native-webview';
 
 
 
-export default function Courses(props){
-    const[courses, setCourses] = useState(undefined);
-    const[map, setMap]= useState();
-    setMap={
-        center: {
-            lat: 59.95,
-            lng: 30.33
-          },
-          zoom: 11
-
-    };
-
-     useEffect(function(){
-        axios.get("http://localhost:8000/course/" + props.id)  
-        .then(function(reponse){ 
-            setCourses (reponse.data); 
-        })
-     }, [props.id]);
-
-   
-
-     if (courses === undefined){
-         return (<View >
-             <ActivityIndicator size="large" color="#00ff00" />
-            </View>
-         )}
-    return (<View >
-        
-            <Text>{courses.title}</Text>
-            <View style={{ height: '100vh', width: '100%' }}>
-        <GoogleMapReact
-        bootstrapURLKeys={{ key:AIzaSyB50mETCdDw-BvMAiwtjCSIr96Bz_MtyyU }}
-          
-          defaultCenter={map.center}
-          defaultZoom={map.zoom}
-        >
-         
-        </GoogleMapReact>
-      </View>
-            {courses.name.map(function(nameData){
-                return(<View><Text>{nameData.setId}</Text> 
-                 <AnyReactComponent lat={latitude.id} lng={longitude.id} />
-                 </View>
-                    
-                   
-
-                )
-               
-               
-        })}
+export default function Courses(){
+    
+    return (
+        < WebView  source = { {  uri : 'https://www.google.com/maps/d/viewer?mid=11fEhEZiv72kKKy7XbbQ3GIufEcTpWUa2&ll=44.76392447806252%2C-0.6240407234153911&z=17'  } } / > 
        
-       </View>
+     
 
      );}

@@ -49,7 +49,7 @@ export default function Enfant({navigation: {navigate}}) {
                              
           
             {nom.map((item)=>{return <View>{monEtat === false &&  nextEtat === false &&
-              <View styleStyle={{width:350}}>
+              <View >
                   <Text style={{fontFamily:'monospace', fontWeight:'bold', fontSize:18, flexWrap:'wrap', width:300}}>  Bienvenue {item}, </Text>
                   <Hello avatar={Kocxy[1].avatar} phrase1={Kocxy[1].phrase1} />
                   <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:10, margin:20}} title="C'est Parti !" onPress={handlePressNext} />

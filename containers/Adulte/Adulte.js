@@ -14,7 +14,7 @@ export default function Adulte({navigation: {navigate}}) {
       
       <Button  buttonStyle={{backgroundColor: '#34856E',padding:20, margin:30}} 
           title="Reconnaissance"
-          onPress={() =>navigate('Reconnaissance')
+          onPress={() =>navigate('ReconnaissanceAdulte')
           }
         />
         <Button  buttonStyle={{backgroundColor: '#34856E', padding:20}} 

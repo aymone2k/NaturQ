@@ -5,28 +5,25 @@ import { Button } from 'react-native-elements';
 import axios from 'axios';
 
 
-export default function Etape(props){
-    const[etape, setEtape] = useState(undefined);
+export default function EtapeAdulte(props){
+    const[etapeAdulte, setEtapeAdulte] = useState(undefined);
 
      useEffect(function(){
         axios.get("http://localhost:8000/question/" + props.id)  
         .then(function(reponse){ 
-            setEtape (reponse.data); 
+            setEtapeAdulte(reponse.data); 
         })
      }, [props.id]);
 
    
 
-     if (etape === undefined){
+     if (etapeAdulte === undefined){
          return (<View >
              <ActivityIndicator size="large" color="#00ff00" />
             </View>
          )}
     return (<View >
-        
-            
-
-            {etape.nextProposals.map(function(nextProposalsData){
+             {etapeAdulte.nextProposals.map(function(nextProposalsData){
                 return <Button  buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title={nextProposalsData.content}onPress={function(){
                 props.setId(nextProposalsData.nextStep.id)
             }}/>

@@ -4,9 +4,9 @@
     "slug": "NQ",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo/logoNS.png",
+    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/logo/logoNS.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,12 +21,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo/logoNS.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/logo/logoNS.png"
+      "favicon": "./assets/favicon.png"
     }
   }
 }
