@@ -7,25 +7,24 @@ import EtapeAdulte from '../../components/EtapeAdulte.js';
 import FicheAdulte from '../../components/FicheAdulte.js';
  
 export default function Reconnaissance() {
-  const[idResultAdulte,setIdResultAdulte]=useState()
+  const[idResultAdulte,setIdResultAdulte]=useState(undefined)
   const[idEtapeAdulte, setIdEtapeAdulte] = useState(1)
 
   return (
     <View style={styles.container}>
-          {idEtapeAdulte !== undefined &&
+     
+      {idEtapeAdulte !== undefined &&
         <EtapeAdulte 
           id={idEtapeAdulte}
-          setId={setIdEtapeAdulte}
-          />
-      }
-      {idResultAdulte !== undefined &&
+          setId={setIdEtapeAdulte} /> }
+
+          
+
+      {(idResultAdulte !== undefined )&&
           <FicheAdulte
             id={idResultAdulte}
-            setId={setIdResultAdulte}
-          />
-      }
-      
-  
+            setId={setIdResultAdulte} /> }
+
     </View> 
   );
 }

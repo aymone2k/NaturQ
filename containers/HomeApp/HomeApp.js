@@ -3,13 +3,11 @@ import React from 'react';
 import {ImageBackground, Text, View ,Image} from 'react-native';
 import styles from './HomeApp.styles';
 import { Button } from 'react-native-elements';
-import AnimHaut from '../../components/AnimHaut.js'
-
+import AnimHaut from '../../components/AnimHaut.js';
 
 
 
 export default function HomeApp({navigation}) {
-
 
 
   return (
