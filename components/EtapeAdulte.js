@@ -1,6 +1,7 @@
 import React,{ useEffect , useState}  from 'react';
-import{View, Text, ActivityIndicator, StyleSheet} from 'react-native';
-import { Button, Image } from 'react-native-elements';
+import{View, Text, Image,
+   ActivityIndicator, StyleSheet} from 'react-native';
+import { Button} from 'react-native-elements';
 import FicheAdulte from './FicheAdulte.js';
 import axios from 'axios';
 
@@ -42,7 +43,7 @@ export default function EtapeAdulte(props){
                   { cache === false &&
                   <View>
                       <Button  buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title={nextProposalsData.content}onPress={handlePressZappe}/>
-                       <Image style={styles.tinyLogo} source={{uri:"nextProposalsData.pictureFile"}} />
+                       <Image style={styles.tinyLogo} source={{uri: nextProposalsData.picture }} />
                 </View>}
                   
                   {cache === true &&

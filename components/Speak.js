@@ -31,9 +31,7 @@ useEffect(() => {
   const styles = StyleSheet.create({
     speak:{
       flex:1,
-      fontFamily:'monospace',
-      fontSize: 30,
-      fontWeight:'bold',
+      
     },
     
 }) 
