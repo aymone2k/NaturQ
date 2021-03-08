@@ -20,41 +20,22 @@ const Kocxy = ([
     },
     {
         _id:3,
-        phrase1:"Bonne idée!  Aimes tu les devinettes?   Je te propose de reconnaitre les espèces en devinant en quoi je me suis déguisée. ",
+        phrase1:"Bonne idée! Aimes tu les devinettes?   Je te propose de reconnaitre les espèces en devinant en quoi je me suis déguisée.",
         avatar:require('../assets/kocxy/kocxy.png'),
     },
+   
     {
         _id:4,
-        phrase1:" Quelle espèce souhaiterais tu que j'incarne? ",
+        phrase1:"Bonne idée! Voici la liste des parcours que je te propose",
         avatar:require('../assets/kocxy/kocxy.png'),
     },
     {
         _id:5,
-        phrase1:"Bien! je suis un animal et tu as trouvé mon epreinte, tu peux me retrouver en étudiant la forme de celle-ci ",
-        avatar:require('../assets/kocxy/kocxy.png'),
-    },
-    {
-        _id:6,
-        phrase1:"Alors, je suis un végétal, choisi comment souhaites-tu me retrouver. ",
-        avatar:require('../assets/kocxy/kocxy.png'),
-    },
-    {
-        _id:7,
-        phrase1:" ",
-        avatar:require('../assets/kocxy/kocxy.png'),
-    },
-    {
-        _id:8,
-        phrase1:"Bravo tu m' as presque trouvé",
-        avatar:require('../assets/kocxy/kocxy.png'),
-    },
-    {
-        _id:9,
         phrase1:"Bravo tu as trouvé! Je suis un(e)",
         avatar:require('../assets/kocxy/kocxy.png'),
     },
     {
-        _id:10,
+        _id:6,
         phrase1:"tu peux me prendre en photo et te l'envoyer par mail, saisie ton adresse ici ",
         avatar:require('../assets/kocxy/kocxy.png'),
     },

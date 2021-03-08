@@ -6,8 +6,7 @@ import { Button, Input, Overlay} from 'react-native-elements';
 
 import Hello from '../../components/Hello.js';
 import Kocxy from '../../constants/Kocxy.js';
-import Name from '../../components/Name.js';
-import Speak from '../../components/Speak';
+
 
 
 export default function Enfant({navigation: {navigate}}) {
@@ -49,7 +48,7 @@ export default function Enfant({navigation: {navigate}}) {
                              
           
             {nom.map((item)=>{return <View>{monEtat === false &&  nextEtat === false &&
-              <View >
+              <View style={styles.parti}>
                   <Text style={{fontFamily:'monospace', fontWeight:'bold', fontSize:18, flexWrap:'wrap', width:300}}>  Bienvenue {item}, </Text>
                   <Hello avatar={Kocxy[1].avatar} phrase1={Kocxy[1].phrase1} />
                   <Button  buttonStyle={{backgroundColor: '#C2DB65',padding:10, margin:20}} title="C'est Parti !" onPress={handlePressNext} />
@@ -69,7 +68,7 @@ export default function Enfant({navigation: {navigate}}) {
           }/>
         <Button  buttonStyle={{backgroundColor: '#34856E',padding:20}} 
           title="Parcours"
-          onPress={() =>navigate('Parcours')
+          onPress={() =>navigate('ParcoursEnfant')
           } />
     </View>
     }

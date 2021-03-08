@@ -26,13 +26,7 @@ export default function Fiche(props, item) {
    
     return (
         <View style={styles.container}>
-            <Hello
-          avatar={Kocxy[5].avatar}
-          
-          phrase2={Kocxy[5].phrase2}
-           phrase1={Kocxy[5].phrase1}
-         
-         />
+            <Hello avatar={Kocxy[6].avatar} phrase1={Kocxy[6].phrase1} />
           <Text>Titre {item}</Text>
           <Text>Description</Text>
           <Image

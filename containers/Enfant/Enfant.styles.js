@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
      
     },
+    parti:{ 
+      flex:1,
+      flexDirection:'column',
+      justifyContent:'space-evenly',
+
+    }
   });
 
   export default styles

@@ -15,7 +15,7 @@ useEffect(() => {
   const interval =  setInterval(() => {
       position++;
       setPositionToDisplay(position)
-    }, 100); return()=> clearInterval(interval);}, [])
+    }, 50); return()=> clearInterval(interval);}, [])
 
   return (
    

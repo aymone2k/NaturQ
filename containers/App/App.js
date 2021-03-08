@@ -10,14 +10,12 @@ import HomeApp from '../HomeApp';
 import Home from '../Home';
 import Adulte from '../Adulte';
 import Enfant from '../Enfant';
-import Enfant2 from '../Enfant2/Enfant2.js';
+
 import Parcours from '../Parcours';
+import ParcoursEnfant from '../ParcoursEnfant';
 import Reconnaissance from '../Reconnaissance';
 import ReconnaissanceAdulte from '../ReconnaissanceAdulte';
-import Etape from '../../components/Etape';
-import Fiche from '../../components/Fiche';
-import Name from '../../components/Name.js'
-import NameSaisi from '../../components/NameSaisi';
+
 import LogoTitle from '../../constants/LogoTitle.js';
 
 
@@ -46,8 +44,8 @@ const App = () => {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Adulte" component={Adulte} />
         <Stack.Screen name="Enfant" component={Enfant} />
-        <Stack.Screen name="Enfant2" component={Enfant2} />
         <Stack.Screen name="Parcours" component={Parcours} />
+        <Stack.Screen name="ParcoursEnfant" component={ParcoursEnfant} />
         <Stack.Screen name="Reconnaissance" component={Reconnaissance} />
         <Stack.Screen name="ReconnaissanceAdulte" component={ReconnaissanceAdulte} />
 

@@ -1,15 +1,17 @@
 
 import React,{ useEffect , useState}  from 'react';
 import { Text, View, Image } from 'react-native';
-import styles from './Parcours.styles';
+import styles from './ParcoursEnfant.styles.js';
 import { Button } from 'react-native-elements';
 import Courses1 from '../../components/Courses1.js';
 import Courses2 from '../../components/Courses2.js';
+import Hello from '../../components/Hello.js';
+import Kocxy from '../../constants/Kocxy.js';
 
 
 
 
-export default function Parcours() {
+export default function ParcoursEnfant() {
   const[parcours, setParcours] = useState(undefined);
   const handlePressCourse1 = ()=>{
    setParcours("parcours_1")
@@ -20,7 +22,7 @@ export default function Parcours() {
 
   return (
 <View>
-
+<Hello avatar={Kocxy[4].avatar} phrase1={Kocxy[4].phrase1} />
     <View>
       {parcours === "parcours_1" && <Courses1/>}
       <Text> Parcours 1</Text>

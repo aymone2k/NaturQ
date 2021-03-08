@@ -11,6 +11,8 @@ export default function EtapeAdulte(props){
     const[etapeAdulte, setEtapeAdulte] = useState(undefined);
     const[cache, setCache] = useState(false);
 
+   
+
      useEffect(function(){
         axios.get("http://localhost:8000/question/" + props.id)  
         .then(function(reponse){ 
@@ -23,6 +25,7 @@ export default function EtapeAdulte(props){
             </View>
          )}
 
+       
 
 
 
@@ -30,10 +33,9 @@ export default function EtapeAdulte(props){
              {etapeAdulte.nextProposals.map(function(nextProposalsData){ 
              
              const handlePressZappe = function(){
-              if (nextProposalsData.nextStep.id === 26){
-               setCache(true)       
-               }
-   
+                 if (nextProposalsData.nextStep.id === 26){
+                   setCache(true) }
+           
               props.setId(nextProposalsData.nextStep.id) 
           }       
 
@@ -43,12 +45,12 @@ export default function EtapeAdulte(props){
                   { cache === false &&
                   <View>
                       <Button  buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title={nextProposalsData.content}onPress={handlePressZappe}/>
-                       <Image style={styles.tinyLogo} source={{uri: nextProposalsData.picture }} />
+                       <Image style={{width:60, height:40, fex:1, resizeMode:'contain'}} source={{uri: nextProposalsData.picture }} />
                 </View>}
                   
                   {cache === true &&
                     <View>
-                      <FicheAdulte/>
+                      <Text>Coucou</Text>
                       </View>
                   }
 
@@ -60,12 +62,5 @@ export default function EtapeAdulte(props){
 
      );}
 
-     const styles = StyleSheet.create({
-       
-        tinyLogo: {
-          width: 60,
-          height: 40,
-        },
-        
-      });
+   
        
