@@ -12,11 +12,12 @@ export default function Reconnaissance() {
 
   return (
     <View style={styles.container}>
-     
+      
       {idEtapeAdulte !== undefined &&
         <EtapeAdulte 
           id={idEtapeAdulte}
-          setId={setIdEtapeAdulte} /> }
+          setId={setIdEtapeAdulte} 
+          setResultId={setIdResultAdulte}/> }
 
           
 

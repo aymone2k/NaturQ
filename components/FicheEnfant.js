@@ -1,60 +1,50 @@
 import React,{ useEffect , useState}  from 'react';
-import{View, Text , ActivityIndicator} from 'react-native';
-
+import{View, Text , ActivityIndicator, Image} from 'react-native';
+import LogoTitle from './../constants/LogoTitle'
 import axios from 'axios';
+import Hello from './Hello.js';
+import Kocxy from './../constants/Kocxy.js';
 
 
-
-export default function Fiche(props, item) {
+export default function FicheEnfant(props) {
  
-    const [fiche, setFiche] = useState(undefined);
+    const [ficheEnfant, setFicheEnfant] = useState(undefined);
  
     useEffect(function() {
         axios.get('http://localhost:8000/result/' + props.id)
         .then(function(reponse) {
-            setFiche(reponse.data);
+            setFicheEnfant(reponse.data);
         })
     }, [props.id]);
  
-    if(fiche === undefined) {
+    if(ficheEnfant === undefined) {
         return (
-        <View style={styles.container}>
-            <ActivityIndicator size="large" color="#00ff00" />
-        </View>
+            <View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
+            <LogoTitle/>
+        <ActivityIndicator size="large" color="#00ff00" />
+       </View>
         )
     }
    
     return (
-        <View style={styles.container}>
-            <Hello avatar={Kocxy[6].avatar} phrase1={Kocxy[6].phrase1} />
-          <Text>Titre {item}</Text>
-          <Text>Description</Text>
-          <Image
-            style={styles.tinyLogo}
-            source={{
-            uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
-        />
-        <Image
-            style={styles.tinyLogo}
-            source={{
-                uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
-        />
-        <Image
-            style={styles.tinyLogo}
-            source={{
-            uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
-        />
-        <Image
-            style={styles.tinyLogo}
-            source={{
-                uri: 'https://reactnative.dev/img/tiny_logo.png',
-            }}
-        />
-      </View>
-  
+        <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor:'#E2ECBA' }}>
+       
+            <View>
+            <Hello  phrase1={Kocxy[5].phrase1} avatar={Kocxy[5].avatar} />
+                
+                <Text style={{fontSize:18, fontWeight: 'bold'}}>{ficheEnfant.resultName}</Text>
+                
+                <Image style={{width:100, height:100, fex:1, resizeMode:'contain'}} source={{uri: ficheEnfant.resultPhoto }} />
+                <Image style={{width:250, height:200,  fex:1, resizeMode:'contain'}} source={{uri: ficheEnfant.photoSpecies }} />
+                <View style={{flex:1, flexDirection:'row'}}><Text>{ficheEnfant.text}</Text>
+                <Image style={{width:150, height:150,  fex:1, resizeMode:'contain'}} source={{uri: ficheEnfant.photoMore}} />
+                </View>
+                 </View>
+      
+        
+      
+    </View>
+
     );
   }
   

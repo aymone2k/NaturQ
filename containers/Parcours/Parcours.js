@@ -8,7 +8,7 @@ import Courses2 from '../../components/Courses2.js';
 
 
 
-
+ 
 export default function Parcours() {
   const[parcours, setParcours] = useState(undefined);
   const handlePressCourse1 = ()=>{
@@ -19,9 +19,9 @@ export default function Parcours() {
    } 
 
   return (
-<View>
+<View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
 
-    <View>
+<View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
       {parcours === "parcours_1" && <Courses1/>}
       <Text> Parcours 1</Text>
       <Text> Durée </Text>
@@ -31,7 +31,7 @@ export default function Parcours() {
       <Button buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title="Découvrir" onPress={handlePressCourse1}/>
     </View>
 
-    <View>
+    <View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
     {parcours === "parcours_2" && <Courses2/>}
       <Text> Parcours 2</Text>
       <Text> Durée </Text>

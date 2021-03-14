@@ -12,8 +12,25 @@
   <component name="ChangeListManager">
     <list default="true" id="c6d9a560-e644-4572-aad9-a75da7fbf0a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Courses1.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Courses1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Courses2.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Courses2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/EtapeAdulte.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EtapeAdulte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EtapeEnfant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EtapeEnfant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FicheAdulte.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FicheAdulte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FicheEnfant.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FicheEnfant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Hello.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Speak.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Speak.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/Kocxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/Kocxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/Adulte/Adulte.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/Adulte/Adulte.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/App/App.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/App/App.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/Parcours/Parcours.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/Parcours/Parcours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/Parcours/Parcours.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/Parcours/Parcours.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/ParcoursEnfant/ParcoursEnfant.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/ParcoursEnfant/ParcoursEnfant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/ParcoursEnfant/ParcoursEnfant.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/ParcoursEnfant/ParcoursEnfant.styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/Reconnaissance/Reconnaissance.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/Reconnaissance/Reconnaissance.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/containers/ReconnaissanceAdulte/ReconnaissanceAdulte.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/ReconnaissanceAdulte/ReconnaissanceAdulte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/ReconnaissanceAdulte/ReconnaissanceAdulte.styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/containers/ReconnaissanceAdulte/ReconnaissanceAdulte.styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +81,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614702354761" />
-    <state x="1772" y="529" width="1736" height="856" key="AVDManager" timestamp="1615116614173">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="50" y="122" width="1447" height="640" key="AVDManager" timestamp="1615283112922">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="AVDManager/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1615041248350" />
-    <state x="1772" y="529" width="1736" height="856" key="AVDManager/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615116614173" />
-    <state x="-39" y="111" width="1554" height="856" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1614871489035" />
+    <state x="50" y="122" width="1447" height="640" key="AVDManager/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1615283112922" />
+    <state x="1958" y="93" width="1736" height="856" key="AVDManager/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615211095836" />
+    <state x="50" y="122" width="1447" height="640" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1615221133850" />
     <state x="440" y="264" key="FileChooserDialogImpl" timestamp="1614715051691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -88,11 +105,12 @@
     </state>
     <state x="2191" y="222" width="1251" height="713" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614714676544" />
     <state x="217" y="117" width="1264" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1614750558368" />
-    <state x="494" y="190" key="run.anything.popup" timestamp="1614750607391">
+    <state x="494" y="190" key="run.anything.popup" timestamp="1615280952356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="494" y="190" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1615280952356" />
     <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614702581761" />
-    <state x="494" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1614750607391" />
+    <state x="494" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615220349995" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614702158185">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

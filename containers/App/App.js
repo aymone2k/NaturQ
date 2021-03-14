@@ -10,7 +10,8 @@ import HomeApp from '../HomeApp';
 import Home from '../Home';
 import Adulte from '../Adulte';
 import Enfant from '../Enfant';
-
+import Courses1 from '../../components/Courses1';
+import Courses2 from '../../components/Courses2';
 import Parcours from '../Parcours';
 import ParcoursEnfant from '../ParcoursEnfant';
 import Reconnaissance from '../Reconnaissance';
@@ -48,8 +49,8 @@ const App = () => {
         <Stack.Screen name="ParcoursEnfant" component={ParcoursEnfant} />
         <Stack.Screen name="Reconnaissance" component={Reconnaissance} />
         <Stack.Screen name="ReconnaissanceAdulte" component={ReconnaissanceAdulte} />
-
-       
+        <Stack.Screen name="Courses1" component={Courses1} />
+        <Stack.Screen name="Courses2" component={Courses2} />
         </Stack.Navigator>
 
        

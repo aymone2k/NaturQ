@@ -31,6 +31,8 @@ useEffect(() => {
   const styles = StyleSheet.create({
     speak:{
       flex:1,
+      justifyContent: 'center',
+      alignItems: 'center',
       
     },
     

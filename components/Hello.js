@@ -11,7 +11,7 @@ export default function Hello({phrase1, avatar}) {
         
         return<View style={styles.hello}>
       
-        <Image source={avatar} style={{width:120, height:120}}/>
+        <Image source={avatar} style={{width:150, height:150, margin: 15}}/>
         <Speak  >{phrase1}</Speak>
                        
         
@@ -24,6 +24,8 @@ const styles = StyleSheet.create({
       flex:1,
       justifyContent:'center',
       alignItems:'center',
+     
+
     },
     
 })  

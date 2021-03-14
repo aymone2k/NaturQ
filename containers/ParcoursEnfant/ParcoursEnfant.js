@@ -11,36 +11,30 @@ import Kocxy from '../../constants/Kocxy.js';
 
 
 
-export default function ParcoursEnfant() {
-  const[parcours, setParcours] = useState(undefined);
-  const handlePressCourse1 = ()=>{
-   setParcours("parcours_1")
-  }  
-  const handlePressCourse2 = ()=>{
-    setParcours("parcours_2")
-   } 
+export default function ParcoursEnfant({navigation: {navigate}}) {
+ 
 
   return (
-<View>
+<View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
 <Hello avatar={Kocxy[4].avatar} phrase1={Kocxy[4].phrase1} />
-    <View>
-      {parcours === "parcours_1" && <Courses1/>}
+<View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
+      
       <Text> Parcours 1</Text>
       <Text> Durée </Text>
       <Text> Distance</Text>
       
           <Image />
-      <Button buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title="Découvrir" onPress={handlePressCourse1}/>
+      <Button buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title="Découvrir" onPress={()=>navigate('Courses1')}/>
     </View>
 
-    <View>
-    {parcours === "parcours_2" && <Courses2/>}
+    <View style={{flex:1, justifyContent:'center', alignItems:'center' }}>
+  
       <Text> Parcours 2</Text>
       <Text> Durée </Text>
       <Text> Distance</Text>
       
           <Image />
-      <Button buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title="Découvrir" onPress={handlePressCourse2}/>
+      <Button buttonStyle={{backgroundColor: '#34856E',width:150}} containerStyle={{margin:10}} title="Découvrir" onPress={()=>navigate('Courses2')}/>
     </View>
 
 

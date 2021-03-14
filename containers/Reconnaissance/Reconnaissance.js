@@ -6,6 +6,7 @@ import { Button } from 'react-native-elements';
 import EtapeEnfant from '../../components/EtapeEnfant.js';
 import Kocxy from '../../constants/Kocxy.js';
 import Hello from '../../components/Hello';
+import FicheEnfant from '../../components/FicheEnfant.js';
  
 export default function Reconnaissance() {
   const[idResult,setIdResult]=useState(undefined)
@@ -15,12 +16,12 @@ export default function Reconnaissance() {
     <View style={styles.contain}>
  <ImageBackground source={require('../../assets/images/screen/treez.jpg')} style={styles.images}>
 
-          {idEtape !== undefined &&
+          {idEtape !== undefined && 
         <EtapeEnfant 
           id={idEtape}
           setId={setIdEtape}
-          />
-      }
+          setResultId={setIdResult}/> }
+      
       {idResult !== undefined &&
           <FicheEnfant 
             id={idResult}

@@ -4,9 +4,9 @@ import{ StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
     adulte: {
       flex: 1,
-      backgroundColor: '#784834',
+      backgroundColor: '#E2ECBA',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'center', 
     },
   });
 
