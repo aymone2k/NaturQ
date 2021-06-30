@@ -7,7 +7,7 @@ import axios from 'axios';
 
 export default function FicheAdulte(props) {
   const [ficheAdulte, setFicheAdulte] = useState(undefined);
- 
+  
   useEffect(function() {
       axios.get('http://localhost:8000/result/' + props.id)
       .then(function(reponse) {

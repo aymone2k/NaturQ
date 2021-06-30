@@ -21,7 +21,7 @@ export default function Reconnaissance() {
           id={idEtape}
           setId={setIdEtape}
           setResultId={setIdResult}/> }
-      
+       
       {idResult !== undefined &&
           <FicheEnfant 
             id={idResult}

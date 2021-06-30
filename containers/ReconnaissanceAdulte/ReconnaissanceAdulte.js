@@ -19,7 +19,7 @@ export default function Reconnaissance() {
           setId={setIdEtapeAdulte} 
           setResultId={setIdResultAdulte}/> }
 
-          
+           
 
       {idResultAdulte !== undefined &&
           <FicheAdulte
